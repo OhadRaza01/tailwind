@@ -1,0 +1,56 @@
+<!-- Responsive design in tailwind css -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+    <header>
+        <nav
+            class="relative w-full h-14 bg-slate-950 font-mono flex justify-between items-center text-amber-500 px-2 md:px-5 dark:bg-amber-500 dark:text-slate-950">
+            <h1 class="text-2xl md:3xl font-bold">TECHY</h1>
+            <ul class="hidden md:flex justify-center items-center gap-10 text-[18px]">
+                <li class="p-1 underline"><a href="#">Home</a></li>
+                <li class="p-1 underline"><a href="#">About</a></li>
+                <li class="p-1 underline"><a href="#">Contact</a></li>
+            </ul>
+            <div class="hidden md:block">
+                <input class="border-amber-500 border-2 p-1.5 rounded-xl dark:border-slate-950" type="text"
+                    placeholder="Search">
+                <button
+                    class="font-bold border-2 p-1.5 rounded-xl border-amber-500 dark:border-slate-950 dark:hover:bg-slate-950 dark:hover:text-amber-500 hover:bg-amber-500 hover:text-black">
+                    Search
+                </button>
+            </div>
+            <div class="md:hidden flex justify-center items-center">
+                <button id="menu-btn" class="font-bold">
+                    ☰
+                </button>
+            </div>
+
+        </nav>
+        <ul id="mobile-menu"
+            class="hidden flex-col gap-4 text-slate-950 bg-white p-4 font-mono text-lg absolute w-full top-14 left-0 md:hidden">
+            <li class="underline"><a href="#">Home</a></li>
+            <li class="underline"><a href="#">About</a></li>
+            <li class="underline"><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            mobileMenu.classList.toggle("flex");
+        });
+    </script>
+</body>
+
+</html>
