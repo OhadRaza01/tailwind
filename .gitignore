@@ -1,0 +1,3 @@
+# Ignore all node_modules and dist folders inside subprojects
+**/node_modules
+**/dist
