@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/output.css">
     <title>Animation</title>
 </head>
-<body class="h-screen flex justify-center items-center">
-    <button class="p-3 rounded-xl text-2xl bg-amber-500 text-slate-950 transition duration-300 ease-in-out hover:scale-150">Hover me</button>
-    <div class="w-20 h-20 bg-amber-500 animate-spin"></div>
+
+<body>
+    <nav class="w-full h-14 flex justify-center items-center bg-slate-950 text-amber-50">
+        <ul class="text-2xl flex justify-center items-center gap-12">
+            <li class="hover:underline transition-transform hover:scale-110 duration-300">Home</li>
+            <li class="hover:underline transition-transform hover:scale-110 duration-300">Contact</li>
+            <li class="hover:underline transition-transform hover:scale-110 duration-300">About</li>
+        </ul>
+    </nav>
+    <!-- Button Transition -->
+    <button class="px-6 py-3 bg-slate-800 text-white rounded-2xl font-bold
+    hover:bg-amber-500 hover:text-slate-900 hover:scale-110 transition-colors duration-300">
+        Hover me
+    </button>
+
+    <div class="w-64 h-40 bg-slate-700 rounded-xl transition-transform duration-500 ease-out
+    hover:translate-y-[-5px] hover:shadow-2xl">
+
+    </div>
+
+    <img class="w-40 h-40 animate-slideIn"
+        src="https://img.drz.lazcdn.com/static/pk/p/ae7da9120983d33640a0512e66d427c5.jpg_720x720q80.jpg" alt="">
+
+    
+    <button class="btn bg-amber-100">Click me</button>
 </body>
+
 </html>
