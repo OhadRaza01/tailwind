@@ -9,60 +9,89 @@
 </head>
 
 <body class="bg-amber-50">
-    <div>
-        <nav class="w-full h-12 md:h-[70px] bg-white flex justify-between items-center md:px-6">
-            <div>
-                <ul class="flex items-center gap-5">
-                    <li class="font-bold text-2xl flex justify-center items-center gap-3 ">
-                        <img class="w-10 h-10" src="./assets/DropboxIcon.png" alt="">
-                        <h1 class="hidden sm:block">Dropbox</h1>
-                    </li>
-                    <li class=" hidden font-semibold xl:flex justify-center items-center cursor-pointer hover:text-blue-600">
-                        Products
+
+    <!-- navbar starts here -->
+    <nav class="w-full h-auto md:h-[70px] bg-white flex justify-between items-center md:px-6 sticky top-0">
+        <div>
+            <ul class="flex items-center gap-5">
+                <li class="font-bold text-2xl flex justify-center items-center gap-3 ">
+                    <img class="w-10 h-10" src="./assets/DropboxIcon.png" alt="">
+                    <h1 class="hidden sm:block">Dropbox</h1>
+                </li>
+                <li
+                    class=" hidden font-semibold xl:flex justify-center items-center cursor-pointer hover:text-blue-600">
+                    Products
+                    <span>
+                        <img class="w-7 h-7 my-auto px-2 pt-2.5 pb-2" src="./assets/icons8-down-arrow-50.png" alt="">
+                    </span>
+                </li>
+                <li class="hidden font-semibold xl:flex justify-center items-center cursor-pointer hover:text-blue-600">
+                    Solutions
+                    <span>
+                        <img class="w-7 h-7 my-auto px-2 pt-2.5 pb-2" src="./assets/icons8-down-arrow-50.png" alt="">
+                    </span>
+                </li>
+                <li class=" hidden xl:block font-semibold hover:text-blue-600 cursor-pointer ">Enterprise</li>
+                <li class="hidden xl:block font-semibold hover:text-blue-600 cursor-pointer">Pricing</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="flex items-center gap-5">
+                <li class="hidden sm:block "><img class="cursor-pointer w-5 h-5 rounded-full text-black"
+                        src="./assets/icons8-earth-50.png" alt=""></li>
+                <li class=" hidden xl:block cursor-pointer hover:text-blue-600">Contact sales</li>
+                <li class="hidden xl:flex justify-center items-center cursor-pointer hover:text-blue-600">
+                    Get app
+                    <span>
+                        <img class="w-7 h-7 my-auto px-2 pt-2.5 pb-2" src="./assets/icons8-down-arrow-50.png" alt="">
+                    </span>
+                </li>
+                <li class="cursor-pointer hover:text-blue-600">Sign up</li>
+                <li class="cursor-pointer hover:text-blue-600">Log in</li>
+                <li class="hidden md:block cursor-pointer">
+                    <button
+                        class="px-4 py-2 bg-blue-600 hover:bg-blue-700 font-bold cursor-pointer text-white rounded-xl">
+                        Get started
+                    </button>
+                </li>
+
+                <li class="xl:hidden pe-3  md:pe-0 ">
+                    <h1>&#9776;</h1>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- nav bar ends here -->
+
+    <main>
+        <!-- Hero section strats here -->
+        <div class="w-full h-auto flex flex-col lg:flex-row  ">
+            <div class="content w-full lg:w-[50%] lg:flex justify-center items-center ">
+                <div class="w-full lg:max-w-md p-1">
+
+                    <h1 class=" font-bold text-2xl lg:text-5xl py-6">Find anything. Protect everything.</h1>
+                    <p class="lg:text-xl">Find, organize, and protect your work with Dropbox Dash. Now with advanced
+                        search for video, images,
+                        and team members—plus generative AI capabilities across even more connected apps.
+                    </p>
+                    <button
+                        class="py-4 px-8 font-semibold text-lg my-6 text-white rounded-xl bg-blue-600 flex justify-center items-center gap-2 hover:bg-blue-700 cursor-pointer">
+                        Whats new with dash
                         <span>
-                            <img class="w-7 h-7 my-auto px-2 pt-2.5 pb-2" src="./assets/icons8-down-arrow-50.png"
-                                alt="">
+                            <img class="pt-1  w-7 h-7" src="./assets/icons8-arrow-30.png" alt="">
                         </span>
-                    </li>
-                    <li class="hidden font-semibold xl:flex justify-center items-center cursor-pointer hover:text-blue-600">
-                        Solutions
-                        <span>
-                            <img class="w-7 h-7 my-auto px-2 pt-2.5 pb-2" src="./assets/icons8-down-arrow-50.png"
-                                alt="">
-                        </span>
-                    </li>
-                    <li class=" hidden xl:block font-semibold hover:text-blue-600 cursor-pointer ">Enterprise</li>
-                    <li class="hidden xl:block font-semibold hover:text-blue-600 cursor-pointer">Pricing</li>
-                </ul>
+                    </button>
+
+                </div>
             </div>
-            <div>
-                <ul class="flex items-center gap-5">
-                    <li class="hidden sm:block "><img class="cursor-pointer w-5 h-5 rounded-full text-black" src="./assets/icons8-earth-50.png" alt=""></li>
-                    <li class=" hidden xl:block cursor-pointer hover:text-blue-600">Contact sales</li>
-                    <li class="hidden xl:flex justify-center items-center cursor-pointer hover:text-blue-600">
-                        Get app
-                        <span>
-                            <img class="w-7 h-7 my-auto px-2 pt-2.5 pb-2" src="./assets/icons8-down-arrow-50.png"
-                                alt="">
-                        </span>
-                    </li>
-                    <li class="cursor-pointer hover:text-blue-600">Sign up</li>
-                    <li class="cursor-pointer hover:text-blue-600">Log in</li>
-                    <li class="hidden md:block cursor-pointer">
-                        <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 font-bold cursor-pointer text-white rounded-xl">
-                            Get started
-                        </button>
-                    </li>
-
-                    <li class="xl:hidden pe-3  md:pe-0 ">
-                        <h1>&#9776;</h1>
-                    </li>
-                </ul>
+            <div class=" lg:[50%] flex justify-center items-center">
+                <img class="w-full lg:w-[85%] " src="./assets/hero.png" alt="">
             </div>
-
-        </nav>
-
-    </div>
+        </div>
+        <!-- hero section ends here  -->
+    </main>
 </body>
 
 </html>
